@@ -149,7 +149,7 @@ def main():
                       on_click = new_chat,
                  )
         # create a container for each chat
-        container_chats = st.container(height = 400)
+        container_chats = st.container(height = 300)
         with container_chats:
             cols = []
             num_chat = 1
@@ -185,7 +185,7 @@ def main():
                 
     with col2:
         
-        chat_placeholder = st.container(height = 400, border = True)
+        chat_placeholder = st.container(height = 300, border = True)
         prompt_placeholder = st.container()
         container_devoteam = st.container()
     
