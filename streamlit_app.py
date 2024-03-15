@@ -182,7 +182,7 @@ def main():
                              )
 
                 with cols[num_chat - 1][1]:
-                    st.button("D",
+                    st.button("  ",
                               on_click = drop_chat,
                               args = (str(num_chat)),
                               key = "btn_del_" + str(num_chat),
