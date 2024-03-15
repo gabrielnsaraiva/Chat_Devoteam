@@ -172,7 +172,7 @@ def main():
                     except:
                         first_message = "New Chat " + str(num_chat)
 
-                first_message = first_message[:15]
+                first_message = first_message[:20]
 
                 with cols[num_chat - 1][0]:
                     st.button(first_message,
