@@ -139,7 +139,7 @@ def main():
     with container_header: 
         div = """
           <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 17vw;">
-              <a href="https://www.randstad.pt/randstad-research/o-impacto-da-ia-no-mercado-portugues/" target="_blank">
+              <a href="https://gcloud.devoteam.com/" target="_blank">
                   <img src="https://vojvodinaictcluster.org/wp-content/uploads/2021/10/Devoteam-g-cloud-google.png" style="width: 100%; aspect-ratio: 3 / 1;">
               </a>
           </div>
