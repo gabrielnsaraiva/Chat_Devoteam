@@ -217,7 +217,7 @@ def main():
         with container_questions:
             # Only 4 questions
             questions = ["Quais os parceiros da Devoteam?",
-                         "Quais os pilares da Devoteam?".
+                         "Quais os pilares da Devoteam?",
                          "Onde a Devoteam tem escritórios?",
                          "Oportunidades de emprego na Devoteam?"
                         ]
