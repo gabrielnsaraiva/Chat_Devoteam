@@ -193,8 +193,9 @@ def main():
     with col2:
         
         chat_placeholder = st.container(height = 300, border = True)
-        prompt_placeholder = st.container()
         container_questions = st.container()
+        prompt_placeholder = st.container()
+        
         
         with chat_placeholder:
             for chat in st.session_state.history:
