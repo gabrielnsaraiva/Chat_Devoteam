@@ -22,7 +22,7 @@
 /*=== All page color*/
 [data-testid="stAppViewContainer"] {
     /*background-color: #2175CD;*/
-    background-color: #F7F5F0;
+    background-color: #efeadc;
     opacity = 0.1;
     overflow: auto;
     overflow-y: auto;
