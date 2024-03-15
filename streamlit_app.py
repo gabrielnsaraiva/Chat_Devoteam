@@ -191,67 +191,69 @@ def main():
                 num_chat += 1
                 
     with col2:
-        
-        chat_placeholder = st.container(height = 300, border = True)
-        container_questions = st.container()
-        prompt_placeholder = st.container()
-        
-        
-        with chat_placeholder:
-            for chat in st.session_state.history:
-                div = f"""
-                            <div class="chat-row 
-                                {'' if chat["role"] == 'ai' else 'row-reverse'}">
-                                <img class="chat-icon" src="{
-                                    'https://pbs.twimg.com/profile_images/1082991650794889217/h4Bo8Z5E_400x400.jpg' if chat["role"] == 'ai' 
-                                                  else 'https://cdn-icons-png.freepik.com/512/8428/8428718.png'}"
-                                     width=40 height=40>
-                                <div class="chat-bubble
-                                {'ai-bubble' if chat["role"] == 'ai' else 'human-bubble'}">
-                                    &#8203;{chat["content"]}
+        container_all = st.container(height = 300, border = True)
+
+        with container_all:
+            chat_placeholder =  st.container()
+            container_questions = st.container()
+            prompt_placeholder = st.container()
+            
+            
+            with chat_placeholder:
+                for chat in st.session_state.history:
+                    div = f"""
+                                <div class="chat-row 
+                                    {'' if chat["role"] == 'ai' else 'row-reverse'}">
+                                    <img class="chat-icon" src="{
+                                        'https://pbs.twimg.com/profile_images/1082991650794889217/h4Bo8Z5E_400x400.jpg' if chat["role"] == 'ai' 
+                                                      else 'https://cdn-icons-png.freepik.com/512/8428/8428718.png'}"
+                                         width=40 height=40>
+                                    <div class="chat-bubble
+                                    {'ai-bubble' if chat["role"] == 'ai' else 'human-bubble'}">
+                                        &#8203;{chat["content"]}
+                                    </div>
                                 </div>
-                            </div>
-                    """
-                st.markdown(div, unsafe_allow_html=True)
-            
-            
-        with container_questions:
-            # Only 4 questions
-            questions = ["Quais os parceiros da Devoteam?",
-                         "Quais os pilares da Devoteam?",
-                         "Onde a Devoteam tem escritórios?",
-                         "Oportunidades de emprego na Devoteam?"
-                        ]
-            col1_question, col2_question = st.columns(2)
-            with col1_question:
-                st.button( questions[0],
-                          on_click = question_click,
-                          args = (questions[0])
-                         )
-
-                st.button( questions[1],
-                          on_click = question_click,
-                          args = (questions[1])
-                         )
-            with col2_question:
-                st.button( questions[2],
-                          on_click = question_click,
-                          args = (questions[2])
-                         )
-
-                st.button( questions[3],
-                          on_click = question_click,
-                          args = (questions[3])
-                         )
+                        """
+                    st.markdown(div, unsafe_allow_html=True)
                 
-        
-        
-        with prompt_placeholder:
-            st.chat_input(
-                "Chat Here!",
-                on_submit = on_click_callback,
-                key="human_prompt",
-            )
+                
+            with container_questions:
+                # Only 4 questions
+                questions = ["Quais os parceiros da Devoteam?",
+                             "Quais os pilares da Devoteam?",
+                             "Onde a Devoteam tem escritórios?",
+                             "Oportunidades de emprego na Devoteam?"
+                            ]
+                col1_question, col2_question = st.columns(2)
+                with col1_question:
+                    st.button( questions[0],
+                              on_click = question_click,
+                              args = (questions[0])
+                             )
+    
+                    st.button( questions[1],
+                              on_click = question_click,
+                              args = (questions[1])
+                             )
+                with col2_question:
+                    st.button( questions[2],
+                              on_click = question_click,
+                              args = (questions[2])
+                             )
+    
+                    st.button( questions[3],
+                              on_click = question_click,
+                              args = (questions[3])
+                             )
+                    
+            
+            
+            with prompt_placeholder:
+                st.chat_input(
+                    "Chat Here!",
+                    on_submit = on_click_callback,
+                    key="human_prompt",
+                )
         
 
         
