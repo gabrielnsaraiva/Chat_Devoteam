@@ -191,10 +191,10 @@ def main():
                 num_chat += 1
                 
     with col2:
-        container_all = st.container(height = 300, border = True)
+        container_all = st.container(height = 300)
 
         with container_all:
-            chat_placeholder =  st.container()
+            chat_placeholder =  st.container(height = 300, border = True)
             container_questions = st.container()
             prompt_placeholder = st.container()
             
