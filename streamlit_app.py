@@ -143,7 +143,6 @@ def main():
     # First column -> Questions
     with col1:
               
-        st.header("Chats")
         st.button(    "New Chat",
                       on_click = new_chat,
                  )
