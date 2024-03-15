@@ -53,7 +53,7 @@ def initialize_session_state():
         
     if len(st.session_state.history) == 0:
         st.session_state.history.append(
-            {"role": "ai", "content": "Faz-me uma pergunta sobre IA e o mercado de trabalho portugues"}    
+            {"role": "ai", "content": "Faz-me uma pergunta sobre a Devoteam"}    
         )
         
     if "chats" not in st.session_state:
