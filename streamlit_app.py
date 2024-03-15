@@ -188,7 +188,7 @@ def main():
         chat_placeholder = st.container(height = 300, border = True)
         prompt_placeholder = st.container()
         container_devoteam = st.container()
-    
+        
         
         
         with chat_placeholder:
@@ -217,9 +217,11 @@ def main():
                 on_submit = on_click_callback,
                 key="human_prompt",
             )
+
+        
             
-        with container_devoteam:
-            div = """
+    with container_devoteam:
+        div = """
           <div style="display: flex; align-items: center; justify-content: flex-end; height: 70px;">
               <span style="color: #3c3c3a; margin-right: 0px; font-size: 2vh; font-weight: bold;">Powered by</span>
               <a href="https://pt.devoteam.com/pt-pt/" target="_blank">
@@ -227,7 +229,7 @@ def main():
               </a>
           </div>
           """
-            st.markdown(div, unsafe_allow_html=True)
+        st.markdown(div, unsafe_allow_html=True)
 
 if __name__ == '__main__':
     main()
