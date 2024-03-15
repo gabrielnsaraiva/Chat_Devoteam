@@ -140,7 +140,7 @@ def main():
         div = """
       <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 17vw;">
           <a href="https://gcloud.devoteam.com/" target="_blank">
-              <img src="https://vojvodinaictcluster.org/wp-content/uploads/2021/10/Devoteam-g-cloud-google.png" style="max-width: 50%; height: auto; aspect-ratio: 3 / 1;">
+              <img src="https://www.techcalendar.eu/wp-content/uploads/event-manager-uploads/organizer_logo/2021/05/devoteam_rgb_gcloud.png" style="max-width: 50%; height: auto; aspect-ratio: 3 / 1;">
           </a>
       </div>
       """
