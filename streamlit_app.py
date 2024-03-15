@@ -185,7 +185,8 @@ def main():
                     st.button("D",
                               on_click = drop_chat,
                               args = (str(num_chat)),
-                              key = "btn_del_" + str(num_chat)
+                              key = "btn_del_" + str(num_chat),
+                              type="primary"
                              )
                 st.divider()
                 num_chat += 1
