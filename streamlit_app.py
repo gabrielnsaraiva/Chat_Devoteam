@@ -125,7 +125,14 @@ def drop_chat(*args):
         st.session_state.chats.pop(chat_number)
         if chat_number < st.session_state.chat_number:
             st.session_state.chat_number += -1
-        
+
+def question_click(*args):
+    question = ""
+    for val in args:
+        question += val
+
+    st.session_state.question_prompt = question
+    on_click_callback()
 
 #======================================================================================================================================
 def main():
@@ -207,7 +214,35 @@ def main():
                 st.markdown(div, unsafe_allow_html=True)
             
             
+        with container_questions:
+            # Only 4 questions
+            questions = ["Quais os parceiros da Devoteam?",
+                         "Quais os pilares da Devoteam?".
+                         "Onde a Devoteam tem escritórios?",
+                         "Oportunidades de emprego na Devoteam?"
+                        ]
+            col1_question, col2_question = st.columns(2)
+            with col1_question:
+                st.button( questions[0],
+                          on_click = question_click,
+                          args = (questions[0])
+                         )
 
+                st.button( questions[1],
+                          on_click = question_click,
+                          args = (questions[1])
+                         )
+            with col2_question:
+                st.button( questions[2],
+                          on_click = question_click,
+                          args = (questions[2])
+                         )
+
+                st.button( questions[3],
+                          on_click = question_click,
+                          args = (questions[3])
+                         )
+                
         
         
         with prompt_placeholder:
