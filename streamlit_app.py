@@ -135,17 +135,7 @@ def main():
 
     #================================================================================================================================================================================================
     #=== Header
-    container_header = st.container()
-    with container_header: 
-        div = """
-      <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 5vw;">
-          <a href="https://gcloud.devoteam.com/" target="_blank">
-              <img src="https://www.techcalendar.eu/wp-content/uploads/event-manager-uploads/organizer_logo/2021/05/devoteam_rgb_gcloud.png" style="max-width: 50%; height: auto; aspect-ratio: 3 / 1;">
-          </a>
-      </div>
-      """
-
-        st.markdown(div, unsafe_allow_html=True)
+    
     #================================================================================================================================================================================================
     # Divide in two columns
     col1, col2 = st.columns([1, 4])
