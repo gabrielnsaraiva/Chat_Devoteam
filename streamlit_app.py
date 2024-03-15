@@ -187,9 +187,7 @@ def main():
         
         chat_placeholder = st.container(height = 300, border = True)
         prompt_placeholder = st.container()
-        
-        
-        
+        container_questions = st.container()
         
         with chat_placeholder:
             for chat in st.session_state.history:
@@ -208,8 +206,9 @@ def main():
                     """
                 st.markdown(div, unsafe_allow_html=True)
             
-            for _ in range(3):
-                st.markdown("")
+            
+
+        
         
         with prompt_placeholder:
             st.chat_input(
@@ -217,6 +216,7 @@ def main():
                 on_submit = on_click_callback,
                 key="human_prompt",
             )
+        
 
         
     container_devoteam = st.container()        
