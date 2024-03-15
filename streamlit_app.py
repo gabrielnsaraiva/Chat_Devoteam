@@ -203,7 +203,7 @@ def main():
                             <div class="chat-row 
                                 {'' if chat["role"] == 'ai' else 'row-reverse'}">
                                 <img class="chat-icon" src="{
-                                    'https://storage.googleapis.com/gc-poc-cnn-ai-dev/sandbox-experimentation-gsaraiva/Randstad/Randstad%20logo_stacked_color.png' if chat["role"] == 'ai' 
+                                    'https://pbs.twimg.com/profile_images/1082991650794889217/h4Bo8Z5E_400x400.jpg' if chat["role"] == 'ai' 
                                                   else 'https://cdn-icons-png.freepik.com/512/8428/8428718.png'}"
                                      width=40 height=40>
                                 <div class="chat-bubble
