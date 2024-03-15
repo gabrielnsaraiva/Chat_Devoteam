@@ -187,7 +187,7 @@ def main():
         
         chat_placeholder = st.container(height = 300, border = True)
         prompt_placeholder = st.container()
-        container_devoteam = st.container()
+        
         
         
         
@@ -219,7 +219,7 @@ def main():
             )
 
         
-            
+    container_devoteam = st.container()        
     with container_devoteam:
         div = """
           <div style="display: flex; align-items: center; justify-content: flex-end; height: 70px;">
