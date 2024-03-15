@@ -118,7 +118,9 @@ def drop_chat(*args):
             st.session_state.chat_number = 0 # the chat becomes the first one
             st.session_state.history = st.session_state.chats[0]
         else:
-            new_chat()
+            st.session_state.history = []
+            st.session_state.chats.append(st.session_state.history)
+            st.session_state.chat_number = len(st.session_state.chats) - 1
     else:
         st.session_state.chats.pop(chat_number)
         if chat_number < st.session_state.chat_number:
