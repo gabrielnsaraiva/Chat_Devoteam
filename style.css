@@ -1,0 +1,105 @@
+/*======================================================*/
+/*=== Streamlit top bar */
+.st-emotion-cache-18ni7ap.ezrtsby2{
+    padding-top: 0rem;
+    /*display:none;*/
+}
+
+/*======================================================*/
+/*=== All container -> width and color */
+[data-testid="stAppViewBlockContainer"]{
+    padding-top: 3rem;
+    max-width: 100rem;
+}
+
+/*======================================================*/
+/*=== Chat input */
+[data-testid="stChatInput"]{
+    background-color: #FFFFFF;
+}
+
+/*======================================================*/
+/*=== All page color*/
+[data-testid="stAppViewContainer"] {
+    /*background-color: #2175CD;*/
+    background-color: #F7F5F0;
+    opacity = 0.1;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+.st-emotion-cache-1y4p8pa.ea3mdgi5{
+    height: 100vh;
+}
+/*======================================================*/
+/*=== Container Banner*/
+.st-emotion-cache-0.e1f1d6gn0{
+    margin-top: 0vh;
+}
+
+/*======================================================*/
+/*=== Questions buttons*/
+[data-testid="baseButton-secondary"]{
+    width: 100%;
+}
+
+.st-emotion-cache-js728u{
+    gap: 0rem;
+}
+
+/*======================================================*/
+/*=== container chat*/
+.st-emotion-cache-1hrd9ol.e1f1d6gn0{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 60vh;
+    background-color: #FFFFFF; 
+    opacity = 0.5;
+    margin-top: 5vh;
+}
+
+
+.chat-row {
+    display: flex;
+    margin: 5px;
+    width: 100%;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.chat-bubble {
+    font-family: "Source Sans Pro", sans-serif, "Segoe UI", "Roboto", sans-serif;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    margin: 0px 7px;
+    max-width: 70%;
+}
+
+.ai-bubble {
+    background: rgb(240, 242, 246);
+    border-radius: 10px;
+}
+
+.human-bubble {
+    background: linear-gradient(135deg, rgb(0, 178, 255) 0%, rgb(0, 106, 255) 100%); 
+    color: white;
+    border-radius: 10px;
+}
+
+.chat-icon {
+    border-radius: 5px;
+}
+/*======================================================*/
+.st-emotion-cache-1b2d4l5.e1f1d6gn3{
+    margin-top: -1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.st-emotion-cache-r421ms.e10yg2by1{
+    border: none;
+}
