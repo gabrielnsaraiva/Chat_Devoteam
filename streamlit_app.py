@@ -185,7 +185,7 @@ def main():
                 
     with col2:
         
-        chat_placeholder = st.container(height = 300, border = True)
+        chat_placeholder = st.container(height = 400, border = True)
         prompt_placeholder = st.container()
         container_devoteam = st.container()
     
