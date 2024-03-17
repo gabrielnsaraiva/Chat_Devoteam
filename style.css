@@ -119,4 +119,5 @@
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center; /* Centers the background image */
     background-color: #FFFFFF;
+    width: 20px;
 }
