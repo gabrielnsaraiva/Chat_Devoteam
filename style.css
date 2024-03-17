@@ -128,4 +128,9 @@
     background-color: #FFFFFF; /* Sets the background color on hover */
     /* You might want to change the background image behavior on hover as well */
     background-blend-mode: multiply; /* Optional: blends the color with the background image */
+    background-image: url('https://static.thenounproject.com/png/1064108-200.png');
+    /* Additional background properties */
+    background-size: cover; /* This will cover the entire element */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the background image */
 }
