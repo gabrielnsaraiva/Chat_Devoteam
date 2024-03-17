@@ -118,4 +118,5 @@
     background-size: cover; /* This will cover the entire element */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center; /* Centers the background image */
+    background-color: #FFFFFF;
 }
